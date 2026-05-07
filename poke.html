@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="poke.css">
+</head>
+
+<body>
+
+    <h1 class="text-xl text-center text-purple-600 uppercase pt-5 font-bold mb-4">
+        Pokemon API
+    </h1>
+
+    <div class="flex justify-between gap-6">
+
+        <div id="container"
+            class="overflow-y-scroll w-[50%] h-[82vh] border border-gray-300 rounded-lg bg-black/70 p-6 m-4">
+
+        </div>
+
+        <div class="w-[50%] h-[82vh] border relative border-gray-300 rounded-lg bg-blue-300/30 p-6 m-4">
+
+            <input class="w-full mt-10 p-2 border border-gray-300 rounded-2xl" type="text" id="searchInput"
+                placeholder="Search Pokemon">
+            <select class="w-full mt-4 p-2 border border-gray-300 rounded-2xl" id="categorySelect">
+
+                <option value="">Select Pokemon Type</option>
+
+            </select>
+
+            <div id="searchResult"
+                class="mt-6 h-[400px] overflow-y-scroll border border-gray-300 rounded-lg bg-black/80 p-4 pb-24 flex flex-wrap gap-4 justify-center">
+
+            </div>
+
+            <button
+                class="bg-blue-500 hover:bg-blue-700 text-white absolute right-10 bottom-10 font-bold py-2 px-4 rounded">
+
+                Load More
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="poke.js"></script>
+
+</body>
+
+</html>
